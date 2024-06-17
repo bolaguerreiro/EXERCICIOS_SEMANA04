@@ -2,18 +2,19 @@
   <head>
     <title>Netflix [Clone]</title>
     <link rel="stylesheet" type="text/css" href="/style.css" />
+
   </head>
   <body>
     <div class="container">
       <div class="menu">
         <ul>
-          <li>Sobre</li>
-          <li>Trailer</li>
+          <li onclick="listaSobre()">Sobre</li>
+          <li onclick="listaTrailer()">Trailer</li>
           <li>
             <img alt="Netflix" src="./imgs/netflix-logo.png" />
           </li>
-          <li>Atores</li>
-          <li>Avaliações</li>
+          <li onclick="listaAtores()">Atores</li>
+          <li onclick="listaAvaliacoes()">Avaliações</li>
         </ul>
       </div>
 
@@ -35,8 +36,7 @@
             <img src="./imgs/chevron-right.png" />
           </div>
 
-          <div class="episodios">
-            <div class="card-episodio"></div>
+          <div id="lista-episodios" class="episodios">
           </div>
         </div>
 
@@ -58,4 +58,5 @@
       </div>
     </div>
   </body>
+  <script src="/script/script.js" defer></script>
 </html>
