@@ -10,8 +10,9 @@
     flex-direction: column;
     background-color: black;
     min-height: 100%;   
-    /* background-image: url('./imgs/poster.png');
-    background-repeat: cover; */
+    background-image: url('/imgs/poster.png');
+    background-repeat: no-repeat; 
+    background-position: cover;
     
 }
 
@@ -21,7 +22,8 @@
     list-style-type:circle;
     padding: 2em 25vw;
     justify-content: space-between;
-    align-items: flex-end
+    align-items: flex-end;
+    list-style-type: none;
 
 }
 
@@ -96,11 +98,17 @@ ul li {
 }
 
 .social {
-    width: 30px;
-    height: 160px;
-    background-color: white;
+    width: 40px;
+    height: 150px;
     position: absolute;
-    right: 30px;
+    right: 40px;
     top: 50%; 
     transform: translate(-50%, -50%);
+}
+
+.social ul li {
+    
+    list-style-type: none;
+    margin-bottom: 25px;
+
 }
