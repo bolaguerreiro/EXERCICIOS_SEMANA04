@@ -55,16 +55,19 @@ ul li {
 .episodios {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15dpx;
 }
 
 .card-episodio {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
     width: 240px;
     height: 140px;
-    border-radius: 3px;
-    background-color: #cbcbcb;
 }
 
 .m-t-14 {

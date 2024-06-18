@@ -3,17 +3,17 @@
 const episodios = [
     {
         id: 1,
-        img: '/imgs/oip01.jpeg',
-        tempo: '24min'
+        img: './imgs/oip01.jpeg',
+        tempo: '54min'
     },
     {
         id: 2,
-        img: '/imgs/oip02.jpeg',
+        img: './imgs/oip02.jpeg',
         tempo: '26min'
     },
     {
         id: 3,
-        img: '/imgs/oip03.jpeg',
+        img: './imgs/oip03.jpeg',
         tempo: '29min'
     },
 ]
@@ -24,15 +24,15 @@ episodios.forEach(episodio => {
     const cardEpisodio = document.createElement('div')
     cardEpisodio.className = 'card-episodio'
     cardEpisodio.innerHTML = `
-                        <span>${episodio.img}</spam>
                         <span>${episodio.tempo}</span>
                         <button onclick="assistirEpisodio(${episodio.id})">Assistir</button>
+                        <span><img src=${episodio.img} position:absolute></span>
                         `
     listaEpisodios.appendChild(cardEpisodio)
 })
 
 function assistirEpisodio(id) {
-    console.log('clicou para assistir o episódio ', id)            
+    alert(`clicou para assistir o episódio ${id}`)            
 }
 
 function listaSobre() {
